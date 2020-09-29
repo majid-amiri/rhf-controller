@@ -24,7 +24,7 @@ import "react-datepicker/dist/react-datepicker.css";
 
 import "./styles.css";
 import ButtonsResult from "./ButtonsResult";
-import DonwShift from "./DonwShift";
+import DownShift from "./DownShift";
 
 let renderCount = 0;
 
@@ -53,7 +53,7 @@ function App() {
 
   return (
     <ThemeProvider theme={theme}>
-      <form onSubmit={handleSubmit(data => setData(data))} className="form">
+      <form onSubmit={handleSubmit((data) => setData(data))} className="form">
         <Header renderCount={renderCount} />
         <div className="container">
           <section>
@@ -175,7 +175,7 @@ function App() {
           </section>
 
           <section>
-            <Controller as={DonwShift} control={control} name="downShift" />
+            <Controller as={DownShift} control={control} name="downShift" />
           </section>
         </div>
 
